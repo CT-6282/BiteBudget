@@ -1,0 +1,178 @@
+<mxfile host="65bd71144e">
+    <diagram id="lJvVnclg6ZxHXhQTMqN5" name="Page-1">
+        <mxGraphModel dx="1732" dy="2022" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Extracción de Datos" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="160" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Escaneo de Tickets&lt;br&gt;Input Manual&lt;br&gt;Ingestión de API" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="145" width="170" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Ingestión en Base de Datos" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="150" width="170" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Transformar" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="145" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Análisis" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="650" y="145" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Categorías&lt;br&gt;Lugares&lt;br&gt;Trends" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="760" y="160" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Cruce de Información con APIs" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="890" y="150" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Recomendaciones" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1010" y="150" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Módulo de Ingesta de Gastos" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1130" y="150" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Vision&lt;br&gt;Input&lt;br&gt;API" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1245" y="150" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Data Lake" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1340" y="145" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Transform" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1430" y="145" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Data Warehouse" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1520" y="140" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Analisis" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1610" y="150" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Extracción de Insights API" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1710" y="160" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Cruce" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1820" y="160" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="DB Histórico" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1910" y="160" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Display" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="2020" y="160" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/Azure_Cosmos_DB.svg;" vertex="1" parent="1">
+                    <mxGeometry x="1156" y="730" width="64" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/devops/Application_Insights.svg;" vertex="1" parent="1">
+                    <mxGeometry x="1320" y="750" width="44" height="63" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/management_governance/Monitor.svg;" vertex="1" parent="1">
+                    <mxGeometry x="1708" y="563" width="64" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="GitHub for&lt;br&gt;Code Repository" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.github" vertex="1" parent="1">
+                    <mxGeometry x="160" y="403" width="75" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Microsoft Planner&lt;br&gt;for Project Plan" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Azure_Boards.svg;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="420" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="Resource Groups&lt;br&gt;for Cloud Reource&lt;br&gt;Management" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/general/Resource_Groups.svg;" vertex="1" parent="1">
+                    <mxGeometry x="710" y="240" width="68" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/general/Tags.svg;" vertex="1" parent="1">
+                    <mxGeometry x="1970" y="363" width="60" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/general/Cost_Management_and_Billing.svg;" vertex="1" parent="1">
+                    <mxGeometry x="1680" y="718" width="68" height="68" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/general/Service_Health.svg;" vertex="1" parent="1">
+                    <mxGeometry x="1920" y="518" width="68" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/security/Azure_Defender.svg;" vertex="1" parent="1">
+                    <mxGeometry x="2060" y="592" width="56.00000000000001" height="68" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Managed_Identities.svg;" vertex="1" parent="1">
+                    <mxGeometry x="1207" y="582" width="38" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/identity/Azure_AD_B2C.svg;" vertex="1" parent="1">
+                    <mxGeometry x="821" y="582" width="69" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/identity/Azure_Active_Directory.svg;" vertex="1" parent="1">
+                    <mxGeometry x="890" y="720" width="70" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/integration/Event_Grid_Domains.svg;" vertex="1" parent="1">
+                    <mxGeometry x="1940" y="655" width="67" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/integration/Service_Bus.svg;" vertex="1" parent="1">
+                    <mxGeometry x="1340" y="592" width="68" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/analytics/Event_Hub_Clusters.svg;" vertex="1" parent="1">
+                    <mxGeometry x="1479" y="560" width="64" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/management_governance/Blueprints.svg;" vertex="1" parent="1">
+                    <mxGeometry x="1080" y="540" width="65" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/management_governance/Policy.svg;" vertex="1" parent="1">
+                    <mxGeometry x="944" y="518" width="60" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/other/Azure_Backup_Center.svg;" vertex="1" parent="1">
+                    <mxGeometry x="680" y="705" width="68" height="62" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/other/Template_Specs.svg;" vertex="1" parent="1">
+                    <mxGeometry x="1823" y="670" width="56.99999999999999" height="68" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/other/Azure_Communication_Services.svg;" vertex="1" parent="1">
+                    <mxGeometry x="570" y="655" width="68" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="App Service for&lt;br&gt;Web App Hosting" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/App_Services.svg;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="429" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/preview/Static_Apps.svg;" vertex="1" parent="1">
+                    <mxGeometry x="680" y="640" width="70" height="56.00000000000001" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/containers/Container_Instances.svg;" vertex="1" parent="1">
+                    <mxGeometry x="960" y="627" width="64" height="69" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/compute/Function_Apps.svg;" vertex="1" parent="1">
+                    <mxGeometry x="1241" y="660" width="68" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/app_services/API_Management_Services.svg;" vertex="1" parent="1">
+                    <mxGeometry x="1410" y="660" width="65" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/storage/Storage_Accounts.svg;" vertex="1" parent="1">
+                    <mxGeometry x="1100" y="627" width="65" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/analytics/Data_Lake_Store_Gen1.svg;" vertex="1" parent="1">
+                    <mxGeometry x="790" y="710" width="64" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/analytics/Log_Analytics_Workspaces.svg;" vertex="1" parent="1">
+                    <mxGeometry x="1036" y="704" width="64" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/Virtual_Networks.svg;" vertex="1" parent="1">
+                    <mxGeometry x="1560" y="648" width="67" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/security/Key_Vaults.svg;" vertex="1" parent="1">
+                    <mxGeometry x="1466" y="730" width="68" height="68" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="Azure Fonr Door&lt;br&gt;for App Entry Point" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/Web_Application_Firewall_Policies_WAF.svg;" vertex="1" parent="1">
+                    <mxGeometry x="425" y="411" width="68" height="68" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="GitHub Actions&lt;br&gt;for Deployment" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.github_code;pointerEvents=1;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="428" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="User Management&lt;br&gt;&lt;br&gt;User Registration &amp;amp; Authentication: Allow users to sign up, login, and manage profiles.&lt;br&gt;&lt;br&gt;User Preferences: Enable users to set preferences like dietary restrictions, goals (e.g., weight loss, muscle gain), favorite foods, disliked ingredients, etc.&lt;br&gt;&lt;br&gt;Family Profile Management: Option for users to include family members and track their preferences or needs (e.g., a child's specific nutritional requirements)." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="-490" width="600" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="Meal Planning&lt;br&gt;&lt;br&gt;Meal Plan Generator: Based on user preferences, generate weekly or daily meal plans.&lt;br&gt;&lt;br&gt;Recipe Database: Store and categorize recipes with nutritional data.&lt;br&gt;&lt;br&gt;Customization: Allow users to customize meals, like swapping ingredients or adjusting portion sizes.&lt;br&gt;&lt;br&gt;Meal Plan Recommendations: AI-Driven suggestions for meals based on health goals (e.g., calories, macronutrients, preferences, and exclusions)." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="840" y="-490" width="570" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="Grocery List Management&lt;br&gt;&lt;br&gt;Grocery List Generator: Automatically generate grocery lists based on meal plans.&lt;br&gt;&lt;br&gt;Integration with Stores: Integration with local stores to suggest items available nearby or help users place an online order.&lt;br&gt;&lt;br&gt;Shopping Optimizations: Use AI to optimize grocery buying (e.g., reduce waste, manage inventory, buy in bulk where appropiate)." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="-280" width="640" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="Data Analysis &amp;amp; Insights&lt;br&gt;&lt;br&gt;Nutrition Analytics: Track and analyze the user's daily/weekly/monthly intake against goals (e.g., calories, macros).&lt;br&gt;&lt;br&gt;Family-wide Analytics: Analyze the health trends across the family, adjusting meal plans based on the aggregate needs of the household.&lt;br&gt;&lt;br&gt;Progress Tracking: Track user progress towards health or weight goals over time." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="870" y="-230" width="550" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="AI/Recommendation System&lt;br&gt;&lt;br&gt;Personalized Meal Recommendations: Based on user behavior, preferences, goals, and previous interactions.&lt;br&gt;&lt;br&gt;Dynamic Meal Plan Updates: AI could adjust meal plans in real time if a user logs a food preference or changes theri health goals.&lt;br&gt;&lt;br&gt;Grocery Suggestions: Based on recipes and dietary trends, AI can suggest products (local/seasonal) to users." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1510" y="-460" width="550" height="210" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
