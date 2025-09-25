@@ -93,16 +93,15 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       
-    # Note: Set up these secrets in your GitHub repository settings:
+    # Note: Using service principal authentication with client secret
+    # Set up these secrets in your GitHub repository settings:
     # - AZURE_CLIENT_ID: Service principal client ID
     # - AZURE_TENANT_ID: Azure AD tenant ID  
-    # - AZURE_SUBSCRIPTION_ID: Azure subscription ID
+    # - AZURE_CLIENT_SECRET: Service principal client secret
     - name: Login to Azure
-      uses: azure/login@v2
+      uses: azure/login@v1
       with:
-        client-id: ${{ secrets.AZURE_CLIENT_ID }}
-        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+        creds: '{"clientId":"${{ secrets.AZURE_CLIENT_ID }}","clientSecret":"${{ secrets.AZURE_CLIENT_SECRET }}","subscriptionId":"${{ secrets.AZURE_SUBSCRIPTION_ID }}","tenantId":"${{ secrets.AZURE_TENANT_ID }}"}'
     
     - name: Update Azure Container Apps
       run: |
