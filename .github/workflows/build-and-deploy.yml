@@ -86,6 +86,9 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
+    permissions:
+      contents: read
+      packages: write
 
     steps:
       - name: Checkout repository
@@ -131,22 +134,31 @@ jobs:
             --image ghcr.io/ct-6282/bitebudgetv2/frontend:latest \
             --revision-suffix $(date +%s)
 
-      - name: Cleanup old container images
-        if: success()
+      - name: Cleanup old container images (optional)
+        if: success() && github.event_name != 'pull_request'
+        continue-on-error: true
         uses: actions/delete-package-versions@v4
         with:
-          package-name: 'bitebudgetv2/backend'
+          package-name: 'ct-6282/bitebudgetv2/backend'
           package-type: 'container'
-          min-versions-to-keep: 3
+          min-versions-to-keep: 5
           delete-only-untagged-versions: false
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Cleanup old frontend images  
-        if: success()
+      - name: Cleanup old frontend images (optional)
+        if: success() && github.event_name != 'pull_request'
+        continue-on-error: true
         uses: actions/delete-package-versions@v4
         with:
-          package-name: 'bitebudgetv2/frontend'
+          package-name: 'ct-6282/bitebudgetv2/frontend'
           package-type: 'container'
-          min-versions-to-keep: 3
+          min-versions-to-keep: 5
           delete-only-untagged-versions: false
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deployment Summary
+        run: |
+          echo "✅ Deployment completed successfully!"
+          echo "🌐 Frontend: https://bitebudget-frontend.livelymoss-133f0f64.eastus.azurecontainerapps.io"
+          echo "🌐 Backend:  https://bitebudget-backend.livelymoss-133f0f64.eastus.azurecontainerapps.io"
+          echo "📦 Images deployed with commit: ${{ github.sha }}"

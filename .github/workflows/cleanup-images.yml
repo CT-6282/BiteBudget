@@ -19,18 +19,20 @@ jobs:
     
     steps:
       - name: Delete old container images
+        continue-on-error: true
         uses: actions/delete-package-versions@v4
         with:
-          package-name: 'bitebudgetv2/${{ matrix.image }}'
+          package-name: 'ct-6282/bitebudgetv2/${{ matrix.image }}'
           package-type: 'container'
           min-versions-to-keep: 5
           delete-only-untagged-versions: false
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Delete untagged images
+        continue-on-error: true
         uses: actions/delete-package-versions@v4
         with:
-          package-name: 'bitebudgetv2/${{ matrix.image }}'
+          package-name: 'ct-6282/bitebudgetv2/${{ matrix.image }}'
           package-type: 'container'
           min-versions-to-keep: 0
           delete-only-untagged-versions: true
