@@ -1,0 +1,35 @@
+location: East US
+resourceGroup: bitebudget-rg
+type: Microsoft.App/containerApps
+properties:
+  environmentId: /subscriptions/0ee4d157-5405-4a09-bf25-b4a0581a1adb/resourceGroups/bitebudget-rg/providers/Microsoft.App/managedEnvironments/bitebudget-env
+  configuration:
+    activeRevisionsMode: Single
+    ingress:
+      external: true
+      targetPort: 80
+      transport: auto
+      traffic:
+        - weight: 100
+          latestRevision: true
+    registries:
+      - server: ghcr.io
+        username: ct-6282 # Replace with your GitHub username
+        passwordSecretRef: github-token
+    secrets:
+      - name: github-token
+        value: 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 # Replace with your GitHub Personal Access Token
+  template:
+    containers:
+      - image: ghcr.io/ct-6282/bitebudgetv2/frontend:latest # Replace ct-6282 with your username
+        name: bitebudget-frontend
+        resources:
+          cpu: 0.25
+          memory: 0.5Gi
+        env:
+          - name: REACT_APP_API_URL # Fixed environment variable name
+            value: https://bitebudget-backend.livelymoss-133f0f64.eastus.azurecontainerapps.io
+    scale:
+      minReplicas: 0
+      maxReplicas: 10
+

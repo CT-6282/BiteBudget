@@ -1,0 +1,36 @@
+location: East US
+resourceGroup: bitebudget-rg
+type: Microsoft.App/containerApps
+properties:
+  environmentId: /subscriptions/0ee4d157-5405-4a09-bf25-b4a0581a1adb/resourceGroups/bitebudget-rg/providers/Microsoft.App/managedEnvironments/bitebudget-env
+  configuration:
+    activeRevisionsMode: Single
+    ingress:
+      external: true
+      targetPort: 5000
+      transport: auto
+      traffic:
+        - weight: 100
+          latestRevision: true
+    registries:
+      - server: ghcr.io
+        username: ricardomontiel # Replace with your GitHub username
+        passwordSecretRef: github-token
+    secrets:
+      - name: github-token
+        value: YOUR_GITHUB_TOKEN_HERE # Replace with your GitHub Personal Access Token
+  template:
+    containers:
+      - image: ghcr.io/ricardomontiel/bitebudgetv2/backend:latest # Replace ricardomontiel with your username
+        name: bitebudget-backend
+        resources:
+          cpu: 0.25
+          memory: 0.5Gi
+        env:
+          - name: FLASK_ENV
+            value: production
+          - name: DATABASE_URL
+            value: sqlite:////tmp/bitebudget.db
+    scale:
+      minReplicas: 0
+      maxReplicas: 10

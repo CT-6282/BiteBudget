@@ -1,0 +1,24 @@
+{
+  "name": "bite-budget-v2",
+  "version": "1.0.0",
+  "description": "Modern grocery shopping analysis and budget management application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd frontend && npm start",
+    "dev:backend": "cd backend && python run.py",
+    "build": "cd frontend && npm run build",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && pip install -r requirements.txt",
+    "test": "cd frontend && npm test && cd ../backend && python -m pytest",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up",
+    "docker:down": "docker-compose down"
+  },
+  "keywords": ["grocery", "budget", "analytics", "shopping", "receipt-scanning"],
+  "author": "BiteBudget Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {}
+}
