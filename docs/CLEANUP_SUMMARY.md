@@ -5,6 +5,7 @@ This document summarizes the cleanup operations performed to streamline the Bite
 ## Changes Made
 
 ### 1. Fixed Azure Deployment Authentication
+
 - **Issue**: GitHub Actions was using deprecated `AZURE_CREDENTIALS` secret format
 - **Solution**: Updated to use individual Azure secrets:
   - `AZURE_CLIENT_ID` - Service principal client ID
@@ -13,7 +14,9 @@ This document summarizes the cleanup operations performed to streamline the Bite
 - **File**: `.github/workflows/build-and-deploy.yml`
 
 ### 2. Removed Redundant Configuration Files
+
 Removed the following unnecessary configuration files:
+
 - `backend-config-fixed.yml`
 - `backend-config-github-updated.yml`
 - `backend-config-github.yml`
@@ -26,7 +29,9 @@ Removed the following unnecessary configuration files:
 - `frontend-config.yml`
 
 ### 3. Removed Unnecessary Scripts
+
 Removed the following PowerShell and shell scripts that are no longer needed:
+
 - `check-github-permissions.ps1`
 - `deploy-azure.ps1`
 - `fix-env-var.ps1`
@@ -34,6 +39,7 @@ Removed the following PowerShell and shell scripts that are no longer needed:
 - `deploy-azure.sh`
 
 ### 4. Consolidated Documentation
+
 - Created `docs/` folder for all documentation
 - Moved all `.md` files except `README.md` to `docs/` directory
 - Backed up original README as `docs/README_BACKUP.md`
@@ -60,11 +66,13 @@ BiteBudget/
 ## Next Steps for Deployment
 
 1. **Set up GitHub Secrets** in repository settings:
+
    - `AZURE_CLIENT_ID`
-   - `AZURE_TENANT_ID` 
+   - `AZURE_TENANT_ID`
    - `AZURE_SUBSCRIPTION_ID`
 
 2. **Create Azure Service Principal**:
+
    ```bash
    az ad sp create-for-rbac --name "BiteBudget-Deploy" --role contributor \
      --scopes /subscriptions/{subscription-id}/resourceGroups/{resource-group} \
@@ -87,6 +95,7 @@ BiteBudget/
 ## Documentation Structure
 
 All documentation is now organized in the `docs/` folder:
+
 - `TECHNICAL_ARCHITECTURE.md` - System design and architecture
 - `DATABASE_CONFIG.md` - Database setup and configuration
 - `DEPLOYMENT_STATUS.md` - Deployment guides and status
